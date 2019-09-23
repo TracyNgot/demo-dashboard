@@ -1,0 +1,103 @@
+{
+  "extends": "airbnb-typescript-prettier",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": 0,
+    "arrow-parens": ["error", "as-needed"],
+    "block-spacing": 0,
+    "camelcase": 0,
+    "class-methods-use-this": 0,
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "imports": "always-multiline",
+        "objects": "always-multiline",
+        "functions": "ignore"
+      }
+    ],
+    "curly": ["error", "multi", "consistent"],
+    "eqeqeq": 0,
+    "import/no-unresolved": 0,
+    "import/no-duplicate": 0,
+    "import/no-dynamic-require": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-mutable-exports": 0,
+    "import/no-named-as-default": 0,
+    "import/prefer-default-export": 0,
+    "init-declarations": 0,
+    "indent": ["error", 2, { "SwitchCase": 1, "VariableDeclarator": "first" }],
+    "global-require": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/label-has-for": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "lines-between-class-members": 0,
+    "new-cap": 0,
+    "nonblock-statement-body-position": 0,
+    "no-empty-function": 0,
+    "no-floating-decimal": 0,
+    "no-irregular-whitespace": 0,
+    "no-mixed-operators": 0,
+    "no-multi-assign": 0,
+    "no-nested-ternary": 0,
+    "no-plusplus": 0,
+    "no-template-curly-in-string": 0,
+    "no-debugger": 0,
+    "no-undef": 0,
+    "no-undef-init": 0,
+    "no-unused-vars": 0,
+    "no-unused-expressions": ["error", { "allowShortCircuit": true }],
+    "no-useless-constructor": 0,
+    "no-use-before-define": 0,
+    "object-curly-newline": 0,
+    "object-curly-spacing": 0,
+    "one-var": 0,
+    "one-var-declaration-per-line": 0,
+    "padded-blocks": ["error", "never"],
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "react/destructuring-assignment": 0,
+    "react/prop-types": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-no-bind": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/no-array-index-key": 0,
+    "react/prefer-stateless-function": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "semi": ["error", "always", { "omitLastInOneLineBlock": true }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts", ".jsx", ".tsx", ".json"]
+      }
+    },
+    "import/extensions": [".js", ".ts", ".mjs", ".jsx", ".tsx"]
+  }
+}

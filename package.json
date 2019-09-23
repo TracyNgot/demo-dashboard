@@ -1,18 +1,30 @@
 {
   "name": "demo-dashboard",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@emotion/styled": "^10.0.17",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.5",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
+    "emotion-theming": "^10.0.19",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.2",
+    "rebass": "^4.0.6",
+    "recharts": "^1.7.1",
+    "redux": "^4.0.4",
+    "redux-observable": "^1.2.0",
+    "rxjs": "^6.5.3",
     "typescript": "3.6.3"
   },
   "scripts": {
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -20,6 +32,13 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}",
+      "!**/{config,interfaces,react-app-env,serviceWorker,store/index, model}.*",
+      "!src/index.tsx"
+    ]
   },
   "browserslist": {
     "production": [
@@ -32,5 +51,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/react": "^9.1.4",
+    "@types/lodash": "^4.14.138",
+    "@types/react-redux": "^7.1.2",
+    "@types/react-router-dom": "^4.3.5",
+    "@types/rebass": "^4.0.0",
+    "@types/recharts": "^1.1.21",
+    "@types/redux": "^3.6.0",
+    "@types/redux-mock-store": "^1.0.1",
+    "@typescript-eslint/parser": "^2.3.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-typescript-prettier": "^1.4.0",
+    "prettier": "^1.18.2",
+    "redux-mock-store": "^1.5.3"
   }
 }
